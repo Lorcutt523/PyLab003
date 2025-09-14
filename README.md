@@ -54,13 +54,13 @@ Now that you have user inputs ready, you’ll move to handling peer-to-peer comm
   2. List all parameters and what you think they are. Put "UNSURE" if you don't have a guess.
   ```shell
   # Example
-  ctx: This is a ZeroMQ Connection Context
-  pipe: This is a communications pipe polled by ZeroMQ for messages.
-  n: This is the peer to peer node my chat app is connected as
-  group: This is the peer chat group I wanted to join
+  ctx: This is a ZeroMQ Connection Context #UNSURE looks like something the program needs to set up connections.
+  pipe: This is a communications pipe polled by ZeroMQ for messages.# a way for the function to send and get messages
+  n: This is the peer to peer node my chat app is connected as # probably the number or ID of the chat user
+  group: This is the peer chat group I wanted to join #the group or room the user chats in
   ```
-  3. Note if the function **returns** anything. If it does, note what you believe it returns, and make a final note about what you believe the function may do.
-  ```shell
+  3. Note if the function **returns** anything. If it does, note what you believe it returns, and make a final note about what you believe the function may do. #the function returns NOTHING.
+  ```shell 
   # Example
   The chat_task method does not return anything, it appears to be the send/recieve manager.
   ```
